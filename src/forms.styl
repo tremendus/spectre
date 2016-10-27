@@ -7,9 +7,9 @@
   -webkit-appearance: none;
   background: #fff;
   background-image: none;
-  border: .1rem solid @control-color;
+  border: .1rem solid $control-color;
   border-radius: .3rem;
-  color: @body-font-color;
+  color: $body-font-color;
   display: block;
   font-size: 1.4rem;
   height: 3.2rem;
@@ -20,7 +20,7 @@
   position: relative;
   width: 100%;
   &:focus {
-    border-color: @core-color;
+    border-color: $core-color;
   }
   &[disabled] {
     background: #eeeff2;
@@ -58,29 +58,29 @@
 
   .has-success &,
   &.is-success {
-    border-color: @control-color-success;
+    border-color: $control-color-success;
   }
 
   .has-danger &,
   &.is-danger {
-    border-color: @control-color-danger;
+    border-color: $control-color-danger;
   }
 }
 
 // Form element: Input note
 .form-input-hint {
-  color: @core-meta-color;
+  color: $core-meta-color;
   display: inline-block;
   margin-top: .4rem;
 
   .has-success &,
   .is-success + & {
-    color: @control-color-success;
+    color: $control-color-success;
   }
 
   .has-danger &,
   .is-danger + & {
-    color: @control-color-danger;
+    color: $control-color-danger;
   }
 }
 
@@ -95,7 +95,7 @@
 // Form element: Select
 .form-select {
   appearance: none;
-  border: .1rem solid @control-color;
+  border: .1rem solid $control-color;
   border-radius: .3rem;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -103,12 +103,12 @@
   padding: .5rem .8rem;
   vertical-align: middle;
   &:not([multiple]) {
-    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
+    background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC") no-repeat right .75rem center / .8rem 1rem;
     height: 3.2rem;
     padding-right: 2.4rem;
   }
   &:focus {
-    border-color: @core-color;
+    border-color: $core-color;
   }
   &::-ms-expand {
     display: none;
@@ -150,7 +150,7 @@
   position: relative;
 
   .form-icon {
-    border: .1rem solid @control-color;
+    border: .1rem solid $control-color;
     display: inline-block;
     font-size: 1.4rem;
     height: 1.4rem;
@@ -165,19 +165,19 @@
     width: 1.4rem;
   }
   &:hover .form-icon {
-    border-color: darken(@control-color, 20%);
+    border-color: darken($control-color, 20%);
   }
 
   input {
     &:focus + .form-icon {
-      border-color: @core-color;
+      border-color: $core-color;
     }
     &:checked + .form-icon {
-      background: @core-color;
-      border-color: @core-color;
+      background: $core-color;
+      border-color: $core-color;
     }
     &:active + .form-icon {
-      background: @core-border-color;
+      background: $core-border-color;
     }
   }
 }
@@ -205,8 +205,8 @@
       }
     }
     &:indeterminate + .form-icon {
-      background: @core-color;
-      border-color: @core-color;
+      background: $core-color;
+      border-color: $core-color;
       &::after {
         background: #fff;
         content: "";
@@ -250,9 +250,9 @@
   position: relative;
 
   .form-icon {
-    background: @control-color;
+    background: $control-color;
     background-clip: padding-box;
-    border: .1rem solid @control-color;
+    border: .1rem solid $control-color;
     border-radius: .9rem;
     display: inline-block;
     height: 1.8rem;
@@ -280,15 +280,15 @@
 
   input {
     &:checked + .form-icon {
-      background: @core-color;
-      border-color: @core-color;
+      background: $core-color;
+      border-color: $core-color;
       &::after {
         left: 1.2rem;
       }
     }
     &:active + .form-icon {
       &::after {
-        background: @core-border-color;
+        background: $core-border-color;
       }
     }
   }
@@ -298,8 +298,8 @@
   display: flex;
 
   .input-group-addon {
-    background: lighten(@core-border-color, 4%);
-    border: .1rem solid @control-color;
+    background: lighten($core-border-color, 4%);
+    border: .1rem solid $control-color;
     border-radius: .3rem;
     line-height: 1.6rem;
     padding: .7rem .8rem;

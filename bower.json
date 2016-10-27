@@ -1,11 +1,11 @@
 {
-  "name": "spectre.css",
-  "version": "0.1.28",
-  "description": "Spectre.css: a lightweight, responsive and modern CSS framework.",
-  "homepage": "http://picturepan2.github.io/spectre",
-  "repository": "picturepan2/spectre",
+  "name": "spectre.css-stylus",
+  "version": "0.0.1",
+  "description": "Stylus version of Spectre CSS",
+  "homepage": "https://github.com/tremendus/spectre",
+  "repository": "tremendus/spectre-stylus.git",
   "license": "MIT",
-  "author": "Yan Zhu <picturepan2@hotmail.com>",
+  "author": "Darren Carter <darren@tremendusapps.com>",
   "main": "dist/spectre.css",
   "keywords": [
     "css",
@@ -14,7 +14,7 @@
     "responsive",
     "mobile-friendly",
     "front-end",
-    "less",
+    "stylus",
     "modern"
   ],
   "ignore": [

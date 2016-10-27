@@ -2,20 +2,21 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: @layout-gutter;
-  padding-right: @layout-gutter;
+  padding-left: $layout-gutter;
+  padding-right: $layout-gutter;
   width: 100%;
-  &:extend(.clearfix all);
+  // &:extend(clearfix all);
+  clearfix();
 }
 // Grid sizes
-@media screen and (min-width: (960px + 2 * @html-font-size * @layout-gutter)) {
+@media screen and (min-width: (960px + 2 * $html-font-size * $layout-gutter)) {
   .grid-960 {
-    width: 96rem + 2 * @layout-gutter;
+    width: 96rem + 2 * $layout-gutter;
   }
 }
-@media screen and (min-width: (480px + 2 * @html-font-size * @layout-gutter)) {
+@media screen and (min-width: (480px + 2 * $html-font-size * $layout-gutter)) {
   .grid-480 {
-    width: 48rem + 2 * @layout-gutter;
+    width: 48rem + 2 * $layout-gutter;
   }
 }
 
@@ -23,8 +24,8 @@
 .columns {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -@layout-gutter;
-  margin-right: -@layout-gutter;
+  margin-left: -$layout-gutter;
+  margin-right: -$layout-gutter;
 
   &.col-gapless {
     margin-left: 0;
@@ -42,7 +43,7 @@
 }
 .column {
   flex: 1;
-  padding: @layout-gutter;
+  padding: $layout-gutter;
 
   &.col-12,
   &.col-11,
@@ -95,7 +96,7 @@
 .col-1 {
   width: 8.33333333%;
 }
-@media screen and (max-width: @size-lg ) {
+@media screen and (max-width: $size-lg ) {
   .col-lg-12,
   .col-lg-11,
   .col-lg-10,
@@ -147,7 +148,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (max-width: @size-md ) {
+@media screen and (max-width: $size-md ) {
   .col-md-12,
   .col-md-11,
   .col-md-10,
@@ -199,7 +200,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (max-width: @size-sm ) {
+@media screen and (max-width: $size-sm ) {
   .col-sm-12,
   .col-sm-11,
   .col-sm-10,
@@ -251,7 +252,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (max-width: @size-xs) {
+@media screen and (max-width: $size-xs) {
   .col-xs-12,
   .col-xs-11,
   .col-xs-10,
@@ -320,27 +321,27 @@
 }
 
 // Responsive breakpoint system
-@media screen and (max-width: @size-xs) {
+@media screen and (max-width: $size-xs) {
   .hide-xs {
     display: none !important;
   }
 }
-@media screen and (max-width: @size-sm) {
+@media screen and (max-width: $size-sm) {
   .hide-sm {
     display: none !important;
   }
 }
-@media screen and (max-width: @size-md) {
+@media screen and (max-width: $size-md) {
   .hide-md {
     display: none !important;
   }
 }
-@media screen and (max-width: @size-lg) {
+@media screen and (max-width: $size-lg) {
   .hide-lg {
     display: none !important;
   }
 }
-@media screen and (max-width: @size-xl) {
+@media screen and (max-width: $size-xl) {
   .hide-xl {
     display: none !important;
   }
