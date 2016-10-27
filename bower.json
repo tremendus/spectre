@@ -1,7 +1,7 @@
 {
-  "name": "spectre.css-stylus",
-  "version": "0.0.1",
-  "description": "Stylus version of Spectre CSS",
+  "name": "spectre-stylus",
+  "version": "0.0.2",
+  "description": "Stylus port of Spectre CSS",
   "homepage": "https://github.com/tremendus/spectre",
   "repository": "tremendus/spectre-stylus.git",
   "license": "MIT",
