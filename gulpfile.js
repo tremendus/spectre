@@ -1,3 +1,6 @@
+// todo: replace less with stylus
+// todo: update autoprefixer to use non-less one
+
 var gulp = require('gulp');
 var less = require('gulp-less');
 var cleancss = require('gulp-clean-css');

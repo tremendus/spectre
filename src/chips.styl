@@ -13,9 +13,10 @@
     flex: 0 0 auto;
   }
   .chip-content {
+    @extends .text-ellipsis;
     flex: 1 1 auto;
     padding: 0 1rem;
-    .text-ellipsis;
+    
   }
   .chip-action {
     flex: 0 0 auto;
@@ -69,8 +70,8 @@
   }
 
   .chip-name {
+    @extends .text-ellipsis;
     margin-left: .4rem;
-    .text-ellipsis;
   }
 
   .avatar {

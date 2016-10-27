@@ -1,13 +1,13 @@
 {
-  "name": "spectre.css",
-  "version": "0.1.28",
+  "name": "spectre.css - stylus",
+  "version": "0.0.1",
   "homepage": "http://picturepan2.github.io/spectre",
-  "author": "Yan Zhu <picturepan2@hotmail.com>",
-  "description": "Spectre.css: a lightweight, responsive and modern CSS framework.",
-  "main": "spectre.less",
+  "author": "Darren Carter <darren@tremendusapps.com>",
+  "description": "Stylus version of Spectre CSS",
+  "main": "spectre.styl",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/picturepan2/spectre.git"
+    "url": "git+https://github.com/tremendus/spectre-stylus.git"
   },
   "license": "MIT",
   "keywords": [
@@ -17,18 +17,17 @@
     "responsive",
     "mobile-friendly",
     "front-end",
-    "less",
+    "stylus",
     "modern"
   ],
   "bugs": {
-    "url": "https://github.com/picturepan2/spectre/issues"
+    "url": "https://github.com/tremendus/spectre-stylus/issues"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.6",
     "gulp-csscomb": "^3.0.7",
-    "gulp-less": "^3.0.5",
-    "gulp-rename": "^1.2.2",
-    "less-plugin-autoprefix": "^1.5.1"
+    "gulp-stylus": "^2.5.0",
+    "gulp-rename": "^1.2.2"
   }
 }
