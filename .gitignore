@@ -1,5 +1,6 @@
 .idea/
 node_modules/
+bower_modules/
 .*
 !.gitignore
 !.csscomb.json
