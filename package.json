@@ -1,5 +1,5 @@
 {
-  "name": "spectre.css - stylus",
+  "name": "spectre.css-stylus",
   "version": "0.0.1",
   "homepage": "http://picturepan2.github.io/spectre",
   "author": "Darren Carter <darren@tremendusapps.com>",
@@ -25,9 +25,10 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "^2.0.6",
     "gulp-csscomb": "^3.0.7",
-    "gulp-stylus": "^2.5.0",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.5.0"
   }
 }
