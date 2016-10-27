@@ -1,8 +1,8 @@
 {
-  "name": "spectre.css - stylus",
+  "name": "spectre.css-stylus",
   "version": "0.0.1",
   "description": "Stylus version of Spectre CSS",
-  "homepage": "http://picturepan2.github.io/spectre",
+  "homepage": "https://github.com/tremendus/spectre",
   "repository": "tremendus/spectre-stylus.git",
   "license": "MIT",
   "author": "Darren Carter <darren@tremendusapps.com>",
