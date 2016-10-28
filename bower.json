@@ -1,12 +1,12 @@
 {
   "name": "spectre-stylus",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Stylus port of Spectre CSS",
-  "homepage": "https://github.com/tremendus/spectre",
-  "repository": "tremendus/spectre-stylus.git",
-  "license": "MIT",
+  "homepage": "https://github.com/tremendus/spectre-stylus",
   "author": "Darren Carter <darren@tremendusapps.com>",
+  "repository": "tremendus/spectre-stylus.git",
   "main": "dist/spectre.css",
+  "license": "MIT",
   "keywords": [
     "css",
     "framework",
