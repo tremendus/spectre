@@ -1114,8 +1114,8 @@ textarea.form-input {
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -$layout-gutter;
-  margin-right: -$layout-gutter;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 .columns.col-gapless {
   margin-left: 0;
