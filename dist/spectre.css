@@ -1849,7 +1849,7 @@ textarea.form-input {
   white-space: nowrap;
 }
 .toast {
-  background: fade(#333, 90%);
+  background: #474747;
   border: .1rem solid #333;
   border-color: #333;
   border-radius: .3rem;
@@ -1859,19 +1859,19 @@ textarea.form-input {
   width: 100%;
 }
 .toast.toast-primary {
-  background: fade(#5764c6, 90%);
+  background: #6873cc;
   border-color: #5764c6;
 }
 .toast.toast-success {
-  background: fade(#32b643, 90%);
+  background: #3bc94d;
   border-color: #32b643;
 }
 .toast.toast-warning {
-  background: fade(#ffb700, 90%);
+  background: #ffbe1a;
   border-color: #ffb700;
 }
 .toast.toast-danger {
-  background: fade(#e85600, 90%);
+  background: #ff6205;
   border-color: #e85600;
 }
 .toast a {
