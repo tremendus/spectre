@@ -1848,7 +1848,6 @@ textarea.form-input {
   transform: translate(-.2rem, -.8rem);
   white-space: nowrap;
 }
-import "mixins",
 .toast {
   background: fade(#333, 90%);
   border: .1rem solid #333;
@@ -1859,40 +1858,31 @@ import "mixins",
   padding: 1.4rem;
   width: 100%;
 }
-import "mixins".toast-primary,
 .toast.toast-primary {
   background: fade(#5764c6, 90%);
   border-color: #5764c6;
 }
-import "mixins".toast-success,
 .toast.toast-success {
   background: fade(#32b643, 90%);
   border-color: #32b643;
 }
-import "mixins".toast-warning,
 .toast.toast-warning {
   background: fade(#ffb700, 90%);
   border-color: #ffb700;
 }
-import "mixins".toast-danger,
 .toast.toast-danger {
   background: fade(#e85600, 90%);
   border-color: #e85600;
 }
-import "mixins" a,
 .toast a {
   color: #fff;
   text-decoration: underline;
 }
-import "mixins" a:hover,
 .toast a:hover,
-import "mixins" a:focus,
 .toast a:focus,
-import "mixins" a:active,
 .toast a:active {
   opacity: .75;
 }
-import "mixins" .btn-clear,
 .toast .btn-clear {
   color: #fff;
 }
