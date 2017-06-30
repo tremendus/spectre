@@ -80,12 +80,12 @@
   color: $gray-color;
   margin-top: $unit-1;
 
-  .has-success &, 
+  .has-success &,
   .is-success + & {
     color: $control-color-success;
   }
 
-  .has-error &, 
+  .has-error &,
   .is-error + & {
     color: $control-color-error;
   }
@@ -137,9 +137,9 @@
 }
 
 // Form validation states
-.form-input, 
+.form-input,
 .form-select {
-  .has-success &, 
+  .has-success &,
   &.is-success {
     border-color: $control-color-success;
     &:focus {
@@ -147,7 +147,7 @@
     }
   }
 
-  .has-error &, 
+  .has-error &,
   &.is-error {
     border-color: $control-color-error;
     &:focus {
@@ -172,8 +172,22 @@
   }
 }
 
+// Form element: Checkbox and radio
+.form-checkbox,
+.form-radio,
+.form-switch {
+  input {
+    clip: rect(0, 0, 0, 0);
+    height: .1rem;
+    margin: -.1rem;
+    overflow: hidden;
+    position: absolute;
+    width: .1rem;
+  }
+}
+
 // Form Icons
-.has-icon-left, 
+.has-icon-left,
 .has-icon-right {
   position: relative;
 
@@ -208,8 +222,8 @@
 }
 
 // Form element: Checkbox and Radio
-.form-checkbox, 
-.form-radio, 
+.form-checkbox,
+.form-radio,
 .form-switch {
   display: inline-block;
   line-height: $line-height;
@@ -242,7 +256,7 @@
   }
 }
 
-.form-checkbox, 
+.form-checkbox,
 .form-radio {
   .form-icon {
     background: $bg-color-light;
@@ -381,14 +395,14 @@
       padding: $control-padding-v-lg $control-padding-h;
     }
   }
-  .input-group-addon, 
+  .input-group-addon,
   .input-group-btn {
     flex: 1 0 auto;
   }
 
-  .form-input, 
-  .form-select, 
-  .input-group-addon, 
+  .form-input,
+  .form-select,
+  .input-group-addon,
   .input-group-btn {
     &:first-child:not(:last-child) {
       border-bottom-right-radius: 0;
@@ -418,9 +432,9 @@
 }
 
 // Form disabled and readonly
-.form-input, 
+.form-input,
 .form-select {
-  &:disabled, 
+  &:disabled,
   &.disabled {
     background-color: $bg-color-dark;
     cursor: not-allowed;
@@ -435,7 +449,7 @@
 }
 
 input {
-  &:disabled, 
+  &:disabled,
   &.disabled {
     & + .form-icon {
       background: $bg-color-dark;
@@ -447,7 +461,7 @@ input {
 
 .form-switch {
   input {
-    &:disabled, 
+    &:disabled,
     &.disabled {
       & + .form-icon::before {
         background: $bg-color-light;
@@ -464,8 +478,8 @@ input {
     display: flex;
   }
 
-  .form-checkbox, 
-  .form-radio, 
+  .form-checkbox,
+  .form-radio,
   .form-switch {
     margin: ($control-size - $control-size-sm) / 2 0;
   }
