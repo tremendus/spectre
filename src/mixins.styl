@@ -21,3 +21,25 @@ label-variant(color) {
   background: color;
   color: $core-light-color;
 }
+make-switch(h) {
+  line-height: h * (1 / 0.9);
+  padding-left: h * 2;
+  
+  i.form-icon {
+    height: h;
+    width: h * (1 / 0.6);
+    border-width: h * (1 / 18);
+    border-radius: h * 0.5;
+    line-height: h * (2.6 / 1.8);
+    
+    &:after {
+      border-radius: h * (0.8 / 1.8);
+      height: h * (1.6 / 1.8);
+      width: h * (1.6 / 1.8);
+    }
+  }
+      
+  input:checked + i.form-icon:after {
+    left: h * (1.2 / 1.8);
+  }
+}
