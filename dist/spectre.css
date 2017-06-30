@@ -886,6 +886,25 @@ textarea.form-input {
   position: absolute;
   width: .1rem;
 }
+label.form-switch {
+  line-height: 27.77777777777778px;
+  padding-left: 50px;
+}
+label.form-switch i.form-icon {
+  border-radius: 12.5px;
+  border-width: 1.388888888888889px;
+  height: 25px;
+  line-height: 36.11111111111111px;
+  width: 41.66666666666667px;
+}
+label.form-switch i.form-icon:after {
+  border-radius: 11.111111111111112px;
+  height: 22.222222222222225px;
+  width: 22.222222222222225px;
+}
+label.form-switch input:checked + i.form-icon:after {
+  left: 16.666666666666664px;
+}
 .form-checkbox,
 .form-radio {
   cursor: pointer;
