@@ -1,0 +1,35 @@
+// Accordions
+.accordion {
+  .accordion-item {
+    input {
+      &:checked {
+        & ~ .accordion-header {
+          .icon {
+            transform: rotate(90deg);
+            transition: all .25s ease;
+          }
+        }
+        & ~ .accordion-body {
+          max-height: 1000px;
+          transition: max-height 3s ease;
+        }
+      }
+    }
+
+    .accordion-header {
+      display: block;
+      padding: $layout-spacing;
+
+      .icon {
+        transition: all .25s ease;
+      }
+    }
+
+    .accordion-body {
+      margin-bottom: $layout-spacing;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease;
+    }
+  }
+}

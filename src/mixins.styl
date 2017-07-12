@@ -1,0 +1,67 @@
+// Mixins
+// Avatar mixin
+avatar-base($size = $unit-8) {
+  font-size: $size / 2.2;
+  height: $size;
+  width: $size;
+}
+
+// Clearfix mixin
+clearfix() {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+// Component focus shadow
+control-shadow($color = $dark-color) {
+  box-shadow: 0 0 0 2px fade-out($color, 100 - 10%);
+}
+
+// Component transition
+control-transition() {
+  transition: all .2s ease;
+}
+
+// Toast variant
+toast-variant($color = $dark-color) {
+  background: fade-out($color, 100 - 90%);
+  border-color: $color;
+}
+
+// Label base style
+label-base() {
+  border-radius: $border-radius;
+  display: inline-block;
+  line-height: 1;
+  padding: 3px 4px;
+  vertical-align: baseline;
+}
+
+label-variant($color= $light-color, $bg-color = $primary-color) {
+  background: $bg-color;
+  color: $color;
+}
+
+// Shadow mixin
+// shadow-variant($offset) {
+//   box-shadow: 0 $offset ($offset+1px)*2 fade-out($dark-color, 100 - 30%);
+// }
+
+// Colors mixin
+text-color-variant($color = $primary-color) {
+  color: $color;
+
+  a& {
+    &:focus,
+    &:hover {
+      color: darken($color, 5%);
+    }
+  }
+}
+
+bg-color-variant($color = $primary-color) {
+  background: $color;
+}

@@ -1,0 +1,24 @@
+// Loading
+.loading {
+  color: transparent !important;
+  min-height: $control-icon-size;
+  pointer-events: none;
+  position: relative;
+  &::after {
+    animation: loading 500ms infinite linear;
+    border: $border-width-lg solid $primary-color;
+    border-radius: $unit-2;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: $control-icon-size;
+    left: 50%;
+    margin-left: -$control-icon-size / 2;
+    margin-top: -$control-icon-size / 2;
+    position: absolute;
+    top: 50%;
+    width: $control-icon-size;
+    z-index: $zindex-0;
+  }
+}
