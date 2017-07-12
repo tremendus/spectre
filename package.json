@@ -1,6 +1,6 @@
 {
   "name": "spectre-stylus",
-  "version": "0.1.0",
+  "version": "0.2.15",
   "description": "Stylus port of Spectre CSS",
   "homepage": "https://github.org/tremendus/spectre-stylus",
   "author": "Darren Carter <darren@tremendusapps.com>",
@@ -28,10 +28,8 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "^2.0.6",
     "gulp-csscomb": "^3.0.7",
+    "gulp-print": "^2.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.5.0"
-  },
-  "dependencies": {
-    "gulp-print": "^2.0.1"
   }
 }
