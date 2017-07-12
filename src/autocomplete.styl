@@ -7,12 +7,12 @@
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    min-height: $unit-8;
-    padding: $border-width 0 0 $border-width;
+    min-height: @unit-8;
+    padding: @border-width 0 0 @border-width;
 
     &.is-focused {
-      border-color: $primary-color;
-      control-shadow();
+      border-color: @primary-color;
+      .control-shadow();
     }
 
     .form-input {
@@ -20,8 +20,8 @@
       box-shadow: none;
       display: inline-block;
       flex: 1 0 auto;
-      height: $unit-7;
-      line-height: $unit-4;
+      height: @unit-7;
+      line-height: @unit-4;
       width: auto;
     }
   }

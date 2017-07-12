@@ -3,14 +3,14 @@
   position: relative;
   white-space: nowrap;
 
-  &[data-badge], 
+  &[data-badge],
   &:not([data-badge]) {
     &::after {
-      background: $primary-color;
+      background: @primary-color;
       background-clip: padding-box;
       border-radius: 10px;
-      box-shadow: 0 0 0 2px $bg-color-light;
-      color: $light-color;
+      box-shadow: 0 0 0 2px @bg-color-light;
+      color: @light-color;
       content: attr(data-badge);
       display: inline-block;
       transform: translate(-2px, -10px);
@@ -18,7 +18,7 @@
   }
   &[data-badge] {
     &::after {
-      font-size: $font-size-sm;
+      font-size: @font-size-sm;
       height: 18px;
       line-height: 1;
       min-width: 18px;
@@ -27,7 +27,7 @@
       white-space: nowrap;
     }
   }
-  &:not([data-badge]), 
+  &:not([data-badge]),
   &[data-badge=''] {
     &::after {
       height: 6px;
@@ -54,17 +54,17 @@
       top: 14.64%;
       right: 14.64%;
       transform: translate(50%, -50%);
-      z-index: $zindex-1;
+      z-index: @zindex-1;
     }
   }
 
   &.avatar-xs {
     &::after {
       content: "";
-      height: $unit-2;
-      min-width: $unit-2;
+      height: @unit-2;
+      min-width: @unit-2;
       padding: 0;
-      width: $unit-2;
+      width: @unit-2;
     }
   }
 }

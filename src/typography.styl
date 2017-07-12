@@ -1,15 +1,15 @@
 // Typography
 // Headings
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   color: inherit;
   font-weight: 500;
   line-height: 1.2;
-  margin-bottom: $unit-4;
+  margin-bottom: @unit-4;
   margin-top: 0;
 }
 h1 {
@@ -33,61 +33,61 @@ h6 {
 
 // Paragraphs
 p {
-  line-height: 1.2 * $line-height;
-  margin: 0 0 $unit-3;
+  line-height: 1.2 * @line-height;
+  margin: 0 0 @unit-3;
 }
 
 // Semantic text elements
-a, 
-ins, 
+a,
+ins,
 u {
   text-decoration-skip: ink edges;
 }
 
 abbr[title] {
-  border-bottom: $border-width dotted;
+  border-bottom: @border-width dotted;
   cursor: help;
   text-decoration: none;
 }
 
 kbd {
-  label-base();
-  label-variant($light-color, $dark-color);
+  .label-base();
+  .label-variant(@light-color, @dark-color);
 }
 
 mark {
-  label-base();
-  label-variant($body-font-color, $highlight-color);
+  .label-base();
+  .label-variant(@body-font-color, @highlight-color);
 }
 
 // Blockquote
 blockquote {
-  border-left: $border-width-lg solid $border-color;
+  border-left: @border-width-lg solid @border-color;
   margin-left: 0;
-  padding: $unit-2 $unit-4;
+  padding: @unit-2 @unit-4;
 
   p:last-child {
     margin-bottom: 0;
   }
 
   cite {
-    color: $gray-color;
+    color: @gray-color;
   }
 }
 
 // Lists
-ul, 
+ul,
 ol {
-  margin: $unit-4 0 $unit-4 $unit-4;
+  margin: @unit-4 0 @unit-4 @unit-4;
   padding: 0;
 
-  ul, 
+  ul,
   ol {
-    margin: $unit-4 0 $unit-4 $unit-4;
+    margin: @unit-4 0 @unit-4 @unit-4;
   }
 
   li {
-    margin-top: $unit-2;
+    margin-top: @unit-2;
   }
 }
 
@@ -112,6 +112,6 @@ dl {
     font-weight: bold;
   }
   dd {
-    margin: $unit-2 0 $unit-4 0;
+    margin: @unit-2 0 @unit-4 0;
   }
 }
