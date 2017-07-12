@@ -1,0 +1,103 @@
+// Core variables
+
+// Global
+$html-font-size = 10px;
+$html-line-height = 1.428571429;
+$body-bg = $bg-color-light;
+$body-font-color = $dark-color;
+$font-size = 14px;
+$font-size-sm = 12px;
+$font-size-lg = 16px;
+$line-height = 20px;
+
+// Fonts
+// Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+$base-font-family = -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+$fallback-font-family = "Helvetica Neue", sans-serif;
+$cjk-zh-font-family = $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family;
+$cjk-jp-font-family = $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family;
+$cjk-ko-font-family = $base-font-family, "Malgun Gothic", $fallback-font-family;
+$body-font-family = $base-font-family, $fallback-font-family;
+
+// Unit sizes
+$unit-0 = 1px;
+$unit-h = 2px;
+$unit-1 = 4px;
+$unit-2 = 8px;
+$unit-3 = 12px;
+$unit-4 = 16px;
+$unit-5 = 20px;
+$unit-6 = 24px;
+$unit-7 = 28px;
+$unit-8 = 32px;
+$unit-9 = 36px;
+$unit-10 = 40px;
+$unit-12 = 48px;
+$unit-16 = 64px;
+
+// Sizes
+$layout-spacing = 10px;
+$layout-spacing-sm = 5px;
+$layout-spacing-lg = 15px;
+$border-radius = 2px;
+$border-width = 1px;
+$border-width-lg = 2px;
+$control-size = $unit-8;
+$control-size-sm = $unit-6;
+$control-size-lg = $unit-10;
+$control-padding-h = $unit-2;
+$control-padding-v = ($control-size - $line-height) / 2 - $border-width;
+$control-padding-v-sm = ($control-size-sm - $line-height) / 2 - $border-width;
+$control-padding-v-lg = ($control-size-lg - $line-height) / 2 - $border-width;
+$control-icon-size = 14px;
+$control-min-width = 180px;
+$control-max-width = 320px;
+
+// Colors
+// Core colors
+$primary-color = #5764c6;
+$primary-color-dark = darken($primary-color, 3%);
+$primary-color-light = lighten($primary-color, 3%);
+$secondary-color = lighten($primary-color, 40%);
+$secondary-color-dark = darken($secondary-color, 3%);
+$secondary-color-light = lighten($secondary-color, 3%);
+
+$link-color = $primary-color;
+$link-color-dark = darken($link-color, 5%);
+
+// Gray colors
+$dark-color = #454d5d;
+$light-color = #fff;
+$gray-color = lighten($dark-color, 40%);
+$gray-color-dark = darken($gray-color, 20%);
+$gray-color-light = lighten($gray-color, 20%);
+
+$border-color = lighten($gray-color-light, 3%);
+$border-color-dark = darken($border-color, 15%);
+$bg-color = lighten($dark-color, 66%);
+$bg-color-dark = darken($bg-color, 3%);
+$bg-color-light = $light-color;
+
+// Control colors
+$control-color-success = #32b643;
+$control-color-warning = #ffb700;
+$control-color-error = #e85600;
+
+// Other colors
+$code-color = #e06870;
+$highlight-color = #ffe9b3;
+
+// Responsive breakpoints
+$size-xs = 480px;
+$size-sm = 600px;
+$size-md = 840px;
+$size-lg = 960px;
+$size-xl = 1280px;
+$size-2x = 1440px;
+
+// Z-index
+$zindex-0 = 1;
+$zindex-1 = 100;
+$zindex-2 = 200;
+$zindex-3 = 300;
+$zindex-4 = 400;
